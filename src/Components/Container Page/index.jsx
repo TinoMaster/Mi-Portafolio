@@ -6,12 +6,12 @@ import { PagProjects } from "../Pag projects";
 
 export const Container = () => {
   return (
-    <div>
+    <section>
       <Routes>
         <Route path="/" element={<PagInicio />} />
         <Route path="/acerca" element={<PagAcerca />} />
         <Route path="/projects" element={<PagProjects />} />
       </Routes>
-    </div>
+    </section>
   );
 };
