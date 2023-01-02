@@ -9,16 +9,16 @@ import { NavLink } from "react-router-dom";
 
 export const Links = ({ darkMode }) => {
   return (
-    <div className="flex font-serif">
+    <div className="flex font-serif relative">
       <NavLink
         className={({ isActive }) =>
           isActive
             ? darkMode
               ? "flex items-baseline mr-4 text-slate-900"
-              : "flex items-baseline mr-4 text-slate-50"
+              : "flex items-baseline mr-4 text-slate-50 "
             : darkMode
             ? "flex items-baseline mr-4 hover:text-slate-900"
-            : "flex items-baseline mr-4 hover:text-slate-50"
+            : "flex items-baseline mr-4 hover:text-slate-50 text-slate-300"
         }
         to={"/"}
       >
@@ -32,7 +32,7 @@ export const Links = ({ darkMode }) => {
               : "flex items-baseline mr-4 text-slate-50"
             : darkMode
             ? "flex items-baseline mr-4 hover:text-slate-900"
-            : "flex items-baseline mr-4 hover:text-slate-50"
+            : "flex items-baseline mr-4 hover:text-slate-50 text-slate-300"
         }
         to={"/projects"}
       >
@@ -47,7 +47,7 @@ export const Links = ({ darkMode }) => {
               : "flex items-baseline mr-4 text-slate-50"
             : darkMode
             ? "flex items-baseline mr-4 hover:text-slate-900"
-            : "flex items-baseline mr-4 hover:text-slate-50"
+            : "flex items-baseline mr-4 hover:text-slate-50 text-slate-300"
         }
         to={"/acerca"}
       >

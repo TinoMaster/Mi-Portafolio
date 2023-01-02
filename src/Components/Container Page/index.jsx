@@ -6,7 +6,7 @@ import { PagProjects } from "../Pag projects";
 
 export const Container = () => {
   return (
-    <section>
+    <section className="bg-neutral-800">
       <Routes>
         <Route path="/" element={<PagInicio />} />
         <Route path="/acerca" element={<PagAcerca />} />
