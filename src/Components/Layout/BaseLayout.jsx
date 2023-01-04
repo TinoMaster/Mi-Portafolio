@@ -8,7 +8,7 @@ export const BaseLayout = () => {
   /* const [state, send] = useMachine(bookingMachine);
   console.log("Nuestra maquina", state); */
   return (
-    <div className="w-full h-full max-w-1080p m-auto relative">
+    <div className="w-full h-full max-w-Web-view m-auto relative p-1">
       <Header />
       <Container />
     </div>

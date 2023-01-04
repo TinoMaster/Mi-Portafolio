@@ -8,6 +8,7 @@ module.exports = {
       },
       maxWidth: {
         "1080p": "1920px",
+        "Web-view": "1800px",
       },
     },
   },

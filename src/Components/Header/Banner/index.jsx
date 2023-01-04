@@ -1,14 +1,14 @@
 import React from "react";
-import { BoxImage } from "./BoxImage";
-import { Escrito } from "./Escrito";
+import { BannerRight } from "./BannerRight";
+import { BannerLeft } from "./BannerLeft";
 
 export const Banner = () => {
   return (
-    <section className="flex w-full">
+    <section className="flex flex-wrap w-full">
       {/* Description */}
-      <Escrito />
+      <BannerLeft />
       {/*BOX IMG */}
-      <BoxImage />
+      <BannerRight />
     </section>
   );
 };
