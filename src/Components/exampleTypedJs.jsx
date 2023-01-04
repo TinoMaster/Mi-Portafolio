@@ -26,7 +26,7 @@ export const TypedReactHooksDemo = () => {
 
   return (
     <>
-      <span className="text-violet-600 ml-1 font-serif font-semibold text-xl" ref={el} />
+      <span className="lg:text-primary ml-1 font-serif font-semibold lg:text-3xl" ref={el} />
 
       {/* <button onClick={() => typed.current.toggle()}>Toggle</button>
       <button onClick={() => typed.current.start()}>Start</button>

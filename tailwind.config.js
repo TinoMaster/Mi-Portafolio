@@ -3,6 +3,9 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      colors: {
+        primary: "#544AF4",
+      },
       maxHeight: {
         "1080p": "1080px",
       },

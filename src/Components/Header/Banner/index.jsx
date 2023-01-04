@@ -4,11 +4,11 @@ import { BannerLeft } from "./BannerLeft";
 
 export const Banner = () => {
   return (
-    <section className="flex flex-wrap w-full">
+    <section className="flex flex-wrap flex-col-reverse lg:flex-row w-full">
       {/* Description */}
       <BannerLeft />
-      {/*BOX IMG */}
       <BannerRight />
+      {/*BOX IMG */}
     </section>
   );
 };
