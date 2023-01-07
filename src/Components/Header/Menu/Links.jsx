@@ -22,7 +22,7 @@ export const Links = ({ darkMode }) => {
         }
         to={"/"}
       >
-        <FontAwesomeIcon className="text-sm mr-1" icon={faHome} /> Inicio
+        <FontAwesomeIcon className="text-sm mr-1" icon={faHome} /> Home
       </NavLink>
       <NavLink
         className={({ isActive }) =>
@@ -37,7 +37,7 @@ export const Links = ({ darkMode }) => {
         to={"/projects"}
       >
         <FontAwesomeIcon className="text-sm mr-1" icon={faFolderBlank} />{" "}
-        Proyectos
+        Projects
       </NavLink>
       <NavLink
         className={({ isActive }) =>
@@ -51,8 +51,7 @@ export const Links = ({ darkMode }) => {
         }
         to={"/acerca"}
       >
-        <FontAwesomeIcon className="text-sm mr-1" icon={faExclamation} /> Acerca
-        de
+        <FontAwesomeIcon className="text-sm mr-1" icon={faExclamation} /> About me
       </NavLink>
     </div>
   );

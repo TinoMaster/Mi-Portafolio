@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       colors: {
         primary: "#544AF4",
+        secondary:"#63f861ff"
       },
       maxHeight: {
         "1080p": "1080px",

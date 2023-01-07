@@ -9,7 +9,7 @@ export const TypedReactHooksDemo = () => {
 
   React.useEffect(() => {
     const options = {
-      strings: ["HTML", "CSS", "JAVASCRIPT", "REACTJS","NODEJS"],
+      strings: ["HTML", "CSS", "JAVASCRIPT", "REACTJS","NODEJS","MONGODB","EXPRESS"],
       typeSpeed: 80,
       backSpeed: 80,
     };
@@ -26,7 +26,7 @@ export const TypedReactHooksDemo = () => {
 
   return (
     <>
-      <span className="lg:text-primary ml-1 font-serif font-semibold lg:text-3xl" ref={el} />
+      <span className="text-secondary ml-1 font-serif font-semibold lg:text-3xl" ref={el} />
 
       {/* <button onClick={() => typed.current.toggle()}>Toggle</button>
       <button onClick={() => typed.current.start()}>Start</button>

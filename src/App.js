@@ -10,8 +10,8 @@ function App() {
     <main
       className={
         !states.darkMode
-          ? "w-screen h-screen bg-neutral-900 text-slate-100 transition-all delay-150"
-          : "w-screen h-screen bg-slate-50 text-slate-700 transition-all delay-150"
+          ? "w-screen h-screen bg-neutral-900 text-slate-100 transition-colors delay-150"
+          : "w-screen h-screen bg-slate-100 text-slate-700 transition-colors delay-150"
       }
     >
       <BrowserRouter>

@@ -1,9 +1,10 @@
 import React from "react";
+import { Banner } from "./Banner";
 
 export const PagInicio = () => {
   return (
-    <div>
-      <h2>PagInicio</h2>
+    <div className="w-full">
+      <Banner />
     </div>
   );
 };

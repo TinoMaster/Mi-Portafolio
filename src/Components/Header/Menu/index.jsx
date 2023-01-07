@@ -6,7 +6,7 @@ import { Links } from "./Links";
 export const Menu = () => {
   const { states } = useContext(AppContext);
   return (
-    <nav className="flex justify-around md:justify-end w-full py-4 md:px-10">
+    <nav className="flex justify-around md:justify-end w-full py-4 md:px-10 shadow-md shadow-primary/5">
       <ButtonModeDark
         darkMode={states.darkMode}
         setDarkMode={states.setDarkMode}

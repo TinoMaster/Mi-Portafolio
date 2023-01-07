@@ -4,7 +4,7 @@ import { BannerLeft } from "./BannerLeft";
 
 export const Banner = () => {
   return (
-    <section className="flex flex-wrap flex-col-reverse lg:flex-row w-full">
+    <section className="flex flex-wrap flex-col-reverse lg:flex-row w-full lg:pt-10 pt-3">
       {/* Description */}
       <BannerLeft />
       <BannerRight />
