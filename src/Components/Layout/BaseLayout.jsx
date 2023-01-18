@@ -2,13 +2,11 @@
 import React from "react";
 import { Container } from "../Container Page";
 import { Header } from "../Header";
-/* import bookingMachine from "../../Machines/bookingMachine"; */
 
 export const BaseLayout = () => {
-  /* const [state, send] = useMachine(bookingMachine);
-  console.log("Nuestra maquina", state); */
+  
   return (
-    <div className="w-full h-full max-w-Web-view m-auto relative p-1">
+    <div className="w-full h-full m-auto relative p-1 overflow-auto">
       <Header />
       <Container />
     </div>

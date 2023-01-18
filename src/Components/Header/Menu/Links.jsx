@@ -7,9 +7,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { NavLink } from "react-router-dom";
 
+
 export const Links = ({ darkMode }) => {
   return (
-    <div className="flex font-serif relative">
+    <div className="lg:flex font-serif relative hidden">
       <NavLink
         className={({ isActive }) =>
           isActive
@@ -51,7 +52,8 @@ export const Links = ({ darkMode }) => {
         }
         to={"/acerca"}
       >
-        <FontAwesomeIcon className="text-sm mr-1" icon={faExclamation} /> About me
+        <FontAwesomeIcon className="text-sm mr-1" icon={faExclamation} /> About
+        me
       </NavLink>
     </div>
   );

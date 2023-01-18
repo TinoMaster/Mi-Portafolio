@@ -5,16 +5,20 @@ module.exports = {
     extend: {
       colors: {
         primary: "#544AF4",
-        secondary:"#63f861ff"
+        secondary: "#63f861ff",
+        darkMode: "#171717",
+        lightMode: "#F1F5F9",
       },
       maxHeight: {
         "1080p": "1080px",
       },
       maxWidth: {
         "1080p": "1920px",
+        "720p": "1500px",
         "Web-view": "1800px",
       },
     },
   },
   plugins: [],
 };
+ 
