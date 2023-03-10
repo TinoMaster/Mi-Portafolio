@@ -4,23 +4,19 @@ import { FaGithub, FaWhatsapp } from "react-icons/fa";
 
 export const Presentation = () => {
   return (
-    <div className="flex flex-col text-xl md:text-4xl">
+    <div className="flex flex-col text-3xl md:text-2xl mt-8 md:mt-0 justify-center items-center md:items-start">
       <span className="block p-1">Hello,</span>
-      <h2 className="font-serif text-4xl md:text-5xl font-semibold text-primary">
+      <h2 className="font-serif text-4xl md:text-3xl font-semibold text-primary">
         I'm Oscar
       </h2>
       <span className="block p-1">Web Designer & Developer.</span>
-      <span className="p-1">
+      <span className="p-1 self-start ml-4 md:ml-0">
         Technologies{" "}
         <span className="absolute ml-1">
           <TypedReactHooksDemo />
         </span>
       </span>
-      <button className="flex justify-center items-center font-serif font-medium border-2 px-2 py-1 w-8/12 lg:w-1/2 my-2 text-sm lg:text-lg z-10 hover:bg-white/10 rounded-md hover:cursor-pointer hover:shadow-md hover:text-slate-200 transition-all">
-        {/*  <FontAwesomeIcon
-          icon={faPhone}
-          className="mr-1 bg-white text-secondary rounded-full p-1"
-        /> */}{" "}
+      <button className="flex justify-center items-center font-serif font-medium border-2 px-2 py-1 w-2/3 lg:w-1/2 my-2 text-lg lg:text-lg z-10 hover:bg-secondary/80 hover:shadow-md hover:shadow-secondary/30 rounded-md hover:cursor-pointer transition-all">
         <FaWhatsapp className="mr-1 text-2xl lg:text-3xl rounded-full p-1" />
         Contact me
       </button>
