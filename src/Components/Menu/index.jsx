@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 import { ButtonModeDark } from "./ButtonModeDark";
 import { Links } from "./Links";
 import { AiOutlineMenu } from "react-icons/ai";
+import AppContext from "../../Contexts/appContext";
 
-export const Menu = ({ states }) => {
+export const Menu = () => {
+  const { states } = useContext(AppContext);
   return (
-    <nav className="flex justify-between items-center w-full py-2 md:px-10 shadow-md shadow-primary/5">
+    <nav className={`flex justify-between items-center w-full py-2  shadow-md shadow-primary/5 sticky top-0 z-30 ${states.darkMode ?"":"bg-black/70"}`}>
       {/*  */}
       <div className="w-10 h-10 lg:w-14 lg:h-14 bg-white shadow-md shadow-primary/30 rounded-full ml-4"></div>
       <div className="flex">

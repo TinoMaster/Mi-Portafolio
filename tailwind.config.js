@@ -14,7 +14,7 @@ module.exports = {
       },
       maxWidth: {
         "1080p": "1920px",
-        "720p": "1500px",
+        "720p": "1200px",
         "Web-view": "1800px",
       },
     },

@@ -15,8 +15,8 @@ export const Links = ({ darkMode }) => {
         className={({ isActive }) =>
           isActive
             ? darkMode
-              ? "flex items-baseline mr-4 text-slate-900"
-              : "flex items-baseline mr-4 text-slate-50 "
+              ? "flex items-baseline mr-4 text-primary"
+              : "flex items-baseline mr-4 text-primary "
             : darkMode
             ? "flex items-baseline mr-4 hover:text-slate-900"
             : "flex items-baseline mr-4 hover:text-slate-50 text-slate-300"
@@ -30,7 +30,7 @@ export const Links = ({ darkMode }) => {
           isActive
             ? darkMode
               ? "flex items-baseline mr-4 text-slate-900"
-              : "flex items-baseline mr-4 text-slate-50"
+              : "flex items-baseline mr-4 text-primary"
             : darkMode
             ? "flex items-baseline mr-4 hover:text-slate-900"
             : "flex items-baseline mr-4 hover:text-slate-50 text-slate-300"
@@ -45,7 +45,7 @@ export const Links = ({ darkMode }) => {
           isActive
             ? darkMode
               ? "flex items-baseline mr-4 text-slate-900"
-              : "flex items-baseline mr-4 text-slate-50"
+              : "flex items-baseline mr-4 text-primary"
             : darkMode
             ? "flex items-baseline mr-4 hover:text-slate-900"
             : "flex items-baseline mr-4 hover:text-slate-50 text-slate-300"
