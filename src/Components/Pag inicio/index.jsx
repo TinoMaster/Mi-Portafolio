@@ -21,16 +21,17 @@ export const PagInicio = () => {
         <div
           className={`absolute bg-gradient-to-b ${
             !states.darkMode
-              ? "from-black/80 to-darkMode"
+              ? "from-darkMode/80 to-darkMode"
               : "from-white/80 to-white/20"
           }  w-full h-full`}
         ></div>
         <Banner />
       </div>
-      <div className="w-full px-8">
+      <div className="w-full px-8 py-10">
+        <h3 className="text-xl text-center pb-4">Tech Stacks</h3>
         <BoxTechs />
       </div>
-      <div className="bg-violet-900/5 md:bg-inherit">
+      <div className="">
         <Resume />
       </div>
     </div>

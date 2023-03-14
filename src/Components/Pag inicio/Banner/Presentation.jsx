@@ -10,7 +10,7 @@ export const Presentation = () => {
         I'm Oscar
       </h2>
       <span className="block p-1">Web Designer & Developer.</span>
-      <span className="p-1 self-start ml-10 md:ml-0">
+      <span className="p-1 mr-28 md:m-0">
         Technologies{" "}
         <span className="absolute ml-1">
           <TypedReactHooksDemo />
