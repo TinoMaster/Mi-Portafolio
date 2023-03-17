@@ -8,7 +8,7 @@ export const BaseLayout = () => {
   const { states } = useContext(AppContext);
   return (
     <div
-      className={`w-full h-full m-auto relative min-h-screen ${
+      className={`w-full min-h-screen ${
         !states.darkMode ? "bg-darkMode" : ""
       } `}
     >
