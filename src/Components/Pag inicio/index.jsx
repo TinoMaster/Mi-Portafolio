@@ -9,11 +9,11 @@ export const PagInicio = () => {
   const { states } = useContext(AppContext);
   return (
     <div className="w-full h-full ">
-      <div className="flex flex-col w-full  m-auto h-[100vh]">
+      <div className="flex flex-col pt-10 w-full  m-auto h-[100vh]">
         <Banner states={states} />
       </div>
 
-      <div className="w-full overflow-hidden bg-zinc-900 py-10 lg:py-20">
+      <div className="w-full overflow-hidden bg-zinc-900">
         <Resume />
       </div>
 

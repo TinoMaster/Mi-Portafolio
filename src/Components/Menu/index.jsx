@@ -7,7 +7,7 @@ import AppContext from "../../Contexts/appContext";
 export const Menu = () => {
   const { states } = useContext(AppContext);
   return (
-    <nav className={`flex justify-between items-center w-full py-3  shadow-md  sticky top-0 z-30 ${states.darkMode ?"bg-gradient-to-b from-lightMode to-lightMode/80":"bg-gradient-to-b from-darkMode to-darkMode/80"}`}>
+    <nav className={`flex justify-between items-center w-full py-3 fixed z-30 ${states.darkMode ?"bg-gradient-to-b from-lightMode to-lightMode/80":"bg-gradient-to-b from-darkMode to-darkMode/80"}`}>
       {/*  */}
       <div className="w-12 h-12 lg:w-14 lg:h-14 bg-white shadow-md shadow-primary/30 rounded-full ml-5"></div>
       <div className="flex">
