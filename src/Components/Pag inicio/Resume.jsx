@@ -1,6 +1,7 @@
 import React from "react";
 import { mi_foto2 } from "../../images";
 import { RiSuitcaseFill } from "react-icons/ri";
+import { Link } from "react-router-dom";
 
 export const Resume = () => {
   return (
@@ -29,7 +30,7 @@ export const Resume = () => {
               <RiSuitcaseFill className="inline bg-white/10 p-1 rounded-full shadow lg:-translate-y-1 shadow-black/50 border-2 border-white/10 text-slate-300" />
             </span>
           </p>
-          <p className="w-full sm:text-2xl font-serif pt-10 z-20">
+          <p className="w-full sm:text-2xl text-justify font-serif pt-10 z-20">
             Soy un desarrollador con poca experiencia en las tecnologías de
             Stack MERN, así como en HTML, CSS, JavaScript y GitHub. He trabajado
             en diversos proyectos web utilizando estas tecnologías y me apasiona
@@ -44,9 +45,12 @@ export const Resume = () => {
             <p>Ingles: Nivel B2</p>
           </div>
           <div className="pb-10 pt-5">
-            <button className="py-2 px-4 bg-secondary/70 hover:bg-secondary/80 transition-colors text-slate-300 rounded-md">
-              Ver mas ⇢
-            </button>
+            <Link
+              to={"/acerca"}
+              className="py-2 px-4 bg-secondary/70 hover:bg-secondary/80 transition-colors text-slate-300 rounded-md"
+            >
+              More info ⇢
+            </Link>
           </div>
         </div>
       </div>

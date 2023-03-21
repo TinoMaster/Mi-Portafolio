@@ -7,22 +7,31 @@ const properties = [
     name: "Gestor de ventas",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Est adipisci optio fuga veritatis maxime soluta possimus minima eos, eum commodi incidunt quos libero perspiciatis temporibus corrupti recusandae. Sapiente, nemo iusto.",
-    image: "https://quericomambo.mx/wp-content/uploads/2021/09/mambo-agencia-creativa-asp-contadores-portada-768x441.jpg",
+    image:
+      "https://quericomambo.mx/wp-content/uploads/2021/09/mambo-agencia-creativa-asp-contadores-portada-768x441.jpg",
     links: [],
+    tegnologiesF: ["React", "Tailwind CSS"],
+    tegnologiesB: ["Nodejs", "Express"],
   },
   {
     name: "Mercado",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Est adipisci optio fuga veritatis maxime soluta possimus minima eos, eum commodi incidunt quos libero perspiciatis temporibus corrupti recusandae. Sapiente, nemo iusto.",
-    image: "https://esquio.es/wp-content/uploads/2022/11/diseno_web_profesional_negocio_online.jpg",
+    image:
+      "https://esquio.es/wp-content/uploads/2022/11/diseno_web_profesional_negocio_online.jpg",
     links: [],
+    tegnologiesF: ["React", "Tailwind CSS"],
+    tegnologiesB: ["Nodejs", "Express"],
   },
   {
     name: "Sueño Virtual",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Est adipisci optio fuga veritatis maxime soluta possimus minima eos, eum commodi incidunt quos libero perspiciatis temporibus corrupti recusandae. Sapiente, nemo iusto.",
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTBUOzY6Zd0yTLm3k8mNUmdGjn2UajWeQj9MA-cPiSC8pv-d2TIzRu_R0rzDbb81P7Stc&usqp=CAU",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTBUOzY6Zd0yTLm3k8mNUmdGjn2UajWeQj9MA-cPiSC8pv-d2TIzRu_R0rzDbb81P7Stc&usqp=CAU",
     links: [],
+    tegnologiesF: ["React", "Tailwind CSS"],
+    tegnologiesB: ["Nodejs", "Express"],
   },
 ];
 
