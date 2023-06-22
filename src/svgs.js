@@ -7,7 +7,7 @@ import vector6 from "./Components/SVGS/VectorsvgBanner.svg";
 import vector7 from "./Components/SVGS/VectorsvgBanner2.svg";
 import vector8 from "./Components/SVGS/VectorVectorsvgBanner2.svg";
 
-const vectors = {
+export {
   vector1,
   vector2,
   vector3,
@@ -17,5 +17,3 @@ const vectors = {
   vector7,
   vector8,
 };
-
-export default vectors;

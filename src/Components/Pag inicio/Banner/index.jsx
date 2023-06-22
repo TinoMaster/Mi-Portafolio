@@ -25,7 +25,7 @@ export const Banner = ({ states }) => {
         ></div>
         <section className="flex flex-wrap relative max-w-720p m-auto flex-row-reverse w-full h-full items-center justify-center py-10 md:px-10">
           {/* Imagen  */}
-          <Imagen />
+          <Imagen darkMode={states.darkMode}/>
           <Presentation />
         </section>
       </div>

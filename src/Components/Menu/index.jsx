@@ -16,7 +16,7 @@ export const Menu = () => {
           setDarkMode={states.setDarkMode}
         />
         <Links darkMode={states.darkMode} />
-        <div className="md:hidden shadow-sm shadow-black/40 p-2 mr-4 rounded-full">
+        <div className="md:hidden shadow-sm shadow-black/40 p-2 mr-8 rounded-full">
           <AiOutlineMenu className="text-2xl" />
         </div>
       </div>

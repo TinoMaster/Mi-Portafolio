@@ -1,23 +1,31 @@
 import React from "react";
 import { mi_foto2 } from "../../images";
+import {vector2,vector3} from "../../svgs"
 import { RiSuitcaseFill } from "react-icons/ri";
 import { Link } from "react-router-dom";
 
-export const Resume = () => {
+export const Resume = ({ darkMode }) => {
   return (
     <div className="w-full text-lg relative max-w-720p m-auto pt-5 rounded-md overflow-hidden font-serif">
-      <div className="flex w-full text-slate-200 justify-end">
+      <div className="flex w-full justify-end">
         {/* img */}
-        <div className="flex w-full absolute">
-          <div className="w-full h-full bg-zinc-900  absolute rounded-md"></div>
-          <div className="w-full h-full overflow-hidden">
+        <div className="flex w-full h-full absolute">
+          <div
+            className={`w-full h-full ${!darkMode ?"bg-zinc-900" :""}  absolute rounded-md`}
+          ></div>
+          <div className="flex flex-col justify-end items-end md:justify-center md:items-center py-10 px-16 md:p-0 w-full md:w-1/2 h-full overflow-hidden z-20">
             <img
-              src={mi_foto2}
+              src={vector2}
               alt=""
-              className="scale-90 -translate-y-7 -translate-x-24 lg:-translate-x-20"
+              className="w-32 h-w-32 md:w-80 md:h-80"
+            />
+            <img
+              src={vector3}
+              alt=""
+              className="w-32 h-w-32 md:w-80 md:h-80"
             />
           </div>
-          <div className="w-full h-full bg-gradient-to-r from-zinc-900/90 to-zinc-900 absolute"></div>
+          <div className={`w-full h-full bg-gradient-to-r ${!darkMode ?"from-zinc-900/90 to-zinc-900":""}  absolute`}></div>
         </div>
         {/* Escrito */}
         <div className="flex flex-col w-11/12 md:w-1/2 m-auto md:mr-10 h-full z-10">
@@ -47,7 +55,7 @@ export const Resume = () => {
           <div className="pb-10 pt-5">
             <Link
               to={"/acerca"}
-              className="py-2 px-4 bg-secondary/70 hover:bg-secondary/80 transition-colors text-slate-300 rounded-md"
+              className="py-2 px-4 bg-secondary/70 hover:bg-secondary/80 transition-colors rounded-md"
             >
               More info ⇢
             </Link>

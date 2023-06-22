@@ -28,7 +28,7 @@ export const Presentation = () => {
         <FaWhatsapp className="text-3xl rounded-full p-1" />
         Contact me
       </button>
-      <div className="flex">
+      <div className="flex px-6">
         <p className="m-2">
           <FaGithub
             onClick={() => {

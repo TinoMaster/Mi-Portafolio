@@ -10,7 +10,7 @@ import { NavLink } from "react-router-dom";
 
 export const Links = ({ darkMode }) => {
   return (
-    <div className="lg:flex font-serif relative hidden">
+    <div className="md:flex font-serif relative hidden pr-2">
       <NavLink
         className={({ isActive }) =>
           isActive
