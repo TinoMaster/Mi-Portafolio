@@ -19,8 +19,8 @@ export const Banner = ({ states }) => {
         <div
           className={`absolute bg-gradient-to-b ${
             !states.darkMode
-              ? "from-darkMode/90 to-darkMode"
-              : "from-lightMode/80 to-lightMode"
+              ? "from-darkMode/60 to-darkMode"
+              : "from-lightMode/60 to-lightMode"
           }  w-full h-full`}
         ></div>
         <section className="flex flex-wrap relative max-w-720p m-auto flex-row-reverse w-full h-full items-center justify-center py-10 md:px-10">
