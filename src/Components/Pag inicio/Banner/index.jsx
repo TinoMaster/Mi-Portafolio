@@ -7,7 +7,7 @@ import { BoxTechs } from "./BoxTechs.jsx";
 export const Banner = ({ states }) => {
   return (
     <>
-      <div className="w-full lg:h-3/5 relative">
+      <div className="w-full h-full relative">
         {/* Fondo */}
         <div className="absolute w-full h-full overflow-hidden">
           <img

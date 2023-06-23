@@ -34,7 +34,7 @@ export const Presentation = () => {
             onClick={() => {
               window.open("https://github.com/TinoMaster", "_blank");
             }}
-            className="hover:cursor-pointer hover:shadow-md hover:text-darkMode/90 transition-all rounded-full"
+            className="hover:cursor-pointer hover:shadow-md hover:text-primary/90 transition-all rounded-full"
           />{" "}
         </p>
         <p className="m-2">
@@ -45,7 +45,7 @@ export const Presentation = () => {
                 "_blank"
               )
             }
-            className="hover:cursor-pointer hover:shadow-md hover:text-darkMode/90 transition-all rounded-full"
+            className="hover:cursor-pointer hover:shadow-md hover:text-primary/90 transition-all rounded-full"
           />{" "}
         </p>
         <p className="m-2">
@@ -53,7 +53,7 @@ export const Presentation = () => {
             onClick={() =>
               window.open("https://twitter.com/Oscar16015874", "_blank")
             }
-            className="hover:cursor-pointer hover:shadow-md hover:text-darkMode/90 transition-all rounded-full"
+            className="hover:cursor-pointer hover:shadow-md hover:text-primary/90 transition-all rounded-full"
           />{" "}
         </p>
       </div>

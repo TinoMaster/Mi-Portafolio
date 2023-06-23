@@ -10,7 +10,7 @@ export const PagInicio = () => {
   const { darkMode } = states;
   return (
     <div className="w-full h-full ">
-      <div className="flex flex-col pt-10 w-full  m-auto h-[100vh]">
+      <div className="flex flex-col pt-10 w-full m-auto h-[100vh]">
         <Banner states={states} />
       </div>
 

@@ -2,7 +2,7 @@ import React from "react";
 
 export const PagProjects = () => {
   return (
-    <div>
+    <div className="">
       <h2>PagProjects</h2>
     </div>
   );
