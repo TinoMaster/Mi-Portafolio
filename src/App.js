@@ -10,8 +10,8 @@ function App() {
     <main
       className={
         !states.darkMode
-          ? "w-screen bg-darkMode text-slate-100 "
-          : "w-screen bg-lightMode text-slate-700 "
+          ? "w-screen h-screen overflow-hidden bg-darkMode text-slate-100 "
+          : "w-screen h-screen overflow-hidden bg-lightMode text-slate-700 "
       }
     >
       <BrowserRouter>

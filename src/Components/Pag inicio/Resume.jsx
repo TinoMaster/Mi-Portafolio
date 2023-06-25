@@ -29,8 +29,8 @@ export const Resume = ({ darkMode }) => {
         </div>
         {/* Escrito */}
         <div className="flex flex-col w-11/12 md:w-1/2 m-auto md:mr-10 h-full z-10">
-          <p className="w-full text-3xl font-medium text-end mr-5 text-primary py-6 lg:py-10">
-            About me
+          <p className="w-full text-xl md:text-2xl font-semibold text-end mr-5 text-primary py-6 lg:py-10">
+            ABOUT ME
           </p>
           <p className="w-4/5 text-2xl sm:text-5xl md:text-4xl text-end font-serif lg:py-6">
             Bienvenido a mi portafolio web.{" "}

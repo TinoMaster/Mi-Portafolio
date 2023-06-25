@@ -5,7 +5,7 @@ import { PagBlog } from "../Pag Blog";
 
 export const Container = () => {
   return (
-    <section className="w-full h-full m-auto overflow-hidden relative">
+    <section className="w-full h-full m-auto overflow-auto relative">
       <Routes>
         <Route path="/" element={<PagInicio />} />
         <Route path="/blog" element={<PagBlog />} />

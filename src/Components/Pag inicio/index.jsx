@@ -17,7 +17,7 @@ export const PagInicio = () => {
 
       <div
         id="2"
-        className={`w-full overflow-hidden ${
+        className={`w-full overflow-hidden lg:py-20 py-10 ${
           !darkMode ? "bg-zinc-900" : "bg-zinc-100"
         } `}
       >
