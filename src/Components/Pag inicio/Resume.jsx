@@ -1,5 +1,4 @@
 import React from "react";
-import { mi_foto2 } from "../../images";
 import {vector2,vector3} from "../../svgs"
 import { RiSuitcaseFill } from "react-icons/ri";
 import { Link } from "react-router-dom";
@@ -13,7 +12,7 @@ export const Resume = ({ darkMode }) => {
           <div
             className={`w-full h-full ${!darkMode ?"bg-zinc-900" :""}  absolute rounded-md`}
           ></div>
-          <div className="flex flex-col justify-end items-end gap-3 md:justify-center md:items-center py-10 px-16 md:p-0 w-full md:w-1/2 h-full overflow-hidden z-20">
+          <div className="flex flex-col justify-end items-end gap-3 md:justify-center md:items-center py-10 px-16 md:p-0 w-full md:w-1/2 h-full overflow-hidden z-10">
             <img
               src={vector2}
               alt=""
