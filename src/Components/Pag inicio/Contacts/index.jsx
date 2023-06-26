@@ -1,6 +1,23 @@
 import React from "react";
 import { FaHandPointDown } from "react-icons/fa";
-import { GrMapLocation } from "react-icons/gr";
+import { IoLocationSharp } from "react-icons/io5";
+import { TfiEmail } from "react-icons/tfi";
+
+const contacts = [
+  {
+    name: "Location",
+    description: "Rome,Italy",
+    icon: <IoLocationSharp />,
+    link: "/",
+  },
+  {
+    name: "Email",
+    description: "ommallono@gmail.com",
+    icon: <TfiEmail />,
+    link: "mailto:ommallono@gmail.com",
+  },
+];
+
 export const Contacts = ({ darkMode }) => {
   return (
     <div className="flex flex-wrap justify-center w-full max-w-720p m-auto font-serif">
@@ -16,17 +33,33 @@ export const Contacts = ({ darkMode }) => {
         {/* Contacts links */}
         <div className="w-full flex flex-wrap">
           {/* Each contact */}
-          <div className="flex flex-wrap justify-center md:justify-start gap-3 items-center py-5 w-full md:w-[300px] rounded-md">
-            {/* Icon */}
-            <div className={`p-4 ${darkMode ?"bg-white":"bg-white"} rounded-full`}>
-              <GrMapLocation className={`text-5xl ${darkMode ?"text-white":"text-white"}`} />
+          {contacts?.map((el) => (
+            <div
+              key={el.name}
+              className="flex flex-wrap justify-center md:justify-start gap-3 items-center py-5 w-full md:w-[300px] rounded-md"
+            >
+              {/* Icon */}
+              <div className="w-full flex justify-center md:w-auto">
+                <div
+                  className={`p-4 ${
+                    darkMode ? "bg-white " : "bg-white/10"
+                  } rounded-full text-4xl shadow-xl shadow-primary/10 border-2 border-primary/20`}
+                >
+                  {el.icon}
+                </div>
+              </div>
+              {/* indication */}
+              <div className="flex flex-col items-center md:items-start">
+                <span className="font-semibold text-lg">{el.name}</span>
+                <a
+                  href={el.link}
+                  className="text-lg text-primary/80 hover:cursor-pointer hover:text-primary/50 transition-all"
+                >
+                  {el.description}
+                </a>
+              </div>
             </div>
-            {/* indication */}
-            <div className="">
-              <span className="font-semibold text-lg">Location</span>
-              <p className="text-lg text-primary/80">Rome,Italy</p>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </div>

@@ -8,7 +8,7 @@ export const Imagen = ({ darkMode }) => {
         <img
           src={mi_foto2}
           alt="my_picture"
-          className=" scale-150 translate-y-40 translate-x-2 xl:translate-y-52"
+          className="scale-150 translate-y-40 translate-x-2 xl:translate-y-48 xl:translate-x-12"
         />
       </div>
     </div>
