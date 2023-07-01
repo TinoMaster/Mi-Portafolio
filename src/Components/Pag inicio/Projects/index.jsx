@@ -1,17 +1,22 @@
 import React from "react";
 import { Gi3DStairs } from "react-icons/gi";
 import { Project } from "./Project";
+import { /* appLocal_dark, */ appLocal_light } from "../../../images";
 
 const properties = [
   {
     name: "Gestor de ventas",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Est adipisci optio fuga veritatis maxime soluta possimus minima eos, eum commodi incidunt quos libero perspiciatis temporibus corrupti recusandae. Sapiente, nemo iusto.",
-    image:
-      "https://quericomambo.mx/wp-content/uploads/2021/09/mambo-agencia-creativa-asp-contadores-portada-768x441.jpg",
-    links: [],
+    image: appLocal_light,
+    links: [
+      "https://github.com/TinoMaster/apklocal",
+      "https://github.com/TinoMaster/api-local",
+      "https://xn--sueovirtual-3db.com/",
+    ],
     tegnologiesF: ["React", "Tailwind CSS"],
     tegnologiesB: ["Nodejs", "Express"],
+    dataBase: "MongoDB",
   },
   {
     name: "Mercado",
@@ -22,6 +27,7 @@ const properties = [
     links: [],
     tegnologiesF: ["React", "Tailwind CSS"],
     tegnologiesB: ["Nodejs", "Express"],
+    dataBase: "MongoDB",
   },
   {
     name: "Sueño Virtual",
@@ -32,6 +38,7 @@ const properties = [
     links: [],
     tegnologiesF: ["React", "Tailwind CSS"],
     tegnologiesB: ["Nodejs", "Express"],
+    dataBase: "MongoDB",
   },
 ];
 

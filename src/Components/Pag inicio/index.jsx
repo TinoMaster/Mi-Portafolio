@@ -5,12 +5,17 @@ import { Resume } from "./Resume";
 import AppContext from "../../Contexts/appContext";
 import { Projects } from "./Projects";
 import { Contacts } from "./Contacts";
+import usePagInicio from "../../Hooks/usePagInicio";
 
 export const PagInicio = () => {
   const { states } = useContext(AppContext);
+  const { modalViewImage, funcPagInicio } = usePagInicio();
   const { darkMode } = states;
   return (
-    <div className="w-full flex flex-col">
+    <div className="w-full flex flex-col relative">
+      {/* Modal View Image */}
+      {/* <div className="fixed w-screen h-screen bg-black/80 z-30"></div> */}
+      {/* layout pag inicio */}
       <div id="1" className="flex flex-col pt-10 w-full m-auto h-[100vh]">
         <Banner states={states} />
       </div>

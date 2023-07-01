@@ -2,11 +2,18 @@ import React from "react";
 import { FaGithub } from "react-icons/fa";
 import { GiRapidshareArrow } from "react-icons/gi";
 import { CgScreen } from "react-icons/cg";
-import { GoServer } from "react-icons/go";
+import { GoServer, GoDatabase } from "react-icons/go";
 
 export const Project = ({ darkMode, properties, index }) => {
-  const { name, description, image, links, tegnologiesF, tegnologiesB } =
-    properties;
+  const {
+    name,
+    description,
+    image,
+    links,
+    tegnologiesF,
+    tegnologiesB,
+    dataBase,
+  } = properties;
   return (
     <div
       className={`flex flex-wrap ${
@@ -15,7 +22,7 @@ export const Project = ({ darkMode, properties, index }) => {
         !darkMode ? "bg-white/5" : "bg-white"
       }`}
     >
-      <div className="flex items-center justify-center w-full h-[300px] lg:h-[400px] lg:w-1/2 p-4">
+      <div className="flex items-center justify-center w-full h-[300px] lg:h-full lg:w-1/2 px-4 py-7">
         <div
           className={`w-full h-full ${
             !darkMode ? "bg-white/5" : "bg-slate-200"
@@ -61,17 +68,40 @@ export const Project = ({ darkMode, properties, index }) => {
             </h4>
           ))}
         </div>
+        <div className="flex pt-3 items-baseline w-full">
+          <p className="flex items-center">
+            <GoDatabase className="mr-1" /> DataBase:
+          </p>
+          <h4 className="mx-2 px-2 shadow shadow-black/30 rounded-md">
+            {dataBase}
+          </h4>
+        </div>
         {/* Caja de links */}
         <div className="w-full flex flex-wrap py-8 justify-center">
-          <button className="flex items-center mx-2 my-2 text-green-500 hover:text-green-400 transition-colors">
+          <button
+            onClick={() => {
+              window.open(links[0], "_blank");
+            }}
+            className="flex items-center mx-2 my-2 text-green-500 hover:text-green-400 transition-colors"
+          >
             <FaGithub className="mr-1 text-3xl" />{" "}
             <span className="text-xl">Code</span>
           </button>
-          <button className="flex items-center mx-2 my-2 text-violet-500 hover:text-violet-400 transition-colors">
+          <button
+            onClick={() => {
+              window.open(links[1], "_blank");
+            }}
+            className="flex items-center mx-2 my-2 text-violet-500 hover:text-violet-400 transition-colors"
+          >
             <FaGithub className="mr-1 text-3xl" />{" "}
             <span className="text-xl">Code API</span>
           </button>
-          <button className="flex items-center mx-2 my-2 text-yellow-500 hover:text-yellow-400 transition-colors">
+          <button
+            onClick={() => {
+              window.open(links[2], "_blank");
+            }}
+            className="flex items-center mx-2 my-2 text-yellow-500 hover:text-yellow-400 transition-colors"
+          >
             <GiRapidshareArrow className="mr-1 text-3xl" />{" "}
             <span className="text-xl">Demo</span>
           </button>
