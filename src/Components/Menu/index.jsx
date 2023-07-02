@@ -3,8 +3,9 @@ import { ButtonModeDark } from "./ButtonModeDark";
 import { Links } from "./Links";
 import { AiOutlineMenu } from "react-icons/ai";
 import AppContext from "../../Contexts/appContext";
+import { mi_logo } from "../../images";
 
-export const Menu = ({switchMenu }) => {
+export const Menu = ({ switchMenu }) => {
   const { states } = useContext(AppContext);
   return (
     <nav
@@ -15,14 +16,23 @@ export const Menu = ({switchMenu }) => {
       }`}
     >
       {/*  */}
-      <div className="w-12 h-12 lg:w-14 lg:h-14 bg-white shadow-md shadow-primary/30 rounded-full ml-5"></div>
+      <div className="w-12 h-12 lg:w-14 lg:h-14 relative bg-white shadow-md shadow-primary/30 rounded-full ml-5">
+        <img
+          src={mi_logo}
+          alt="mi logo"
+          className="w-full h-full object-cover"
+        />
+      </div>
       <div className="flex">
         <ButtonModeDark
           darkMode={states.darkMode}
           setDarkMode={states.setDarkMode}
         />
         <Links darkMode={states.darkMode} />
-        <div onClick={switchMenu} className="md:hidden shadow shadow-primary/40 p-2 mx-4 rounded-full">
+        <div
+          onClick={switchMenu}
+          className="md:hidden shadow shadow-primary/40 p-2 mx-4 rounded-full"
+        >
           <AiOutlineMenu className="text-3xl" />
         </div>
       </div>

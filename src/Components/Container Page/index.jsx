@@ -15,7 +15,7 @@ export const Container = ({ menuMovile, setMenuMovile, darkMode }) => {
       {/* Menu Desplazable */}
       <div
         className={`w-screen h-screen flex justify-center items-center transition-all bg-gradient-to-b ${
-          !darkMode ? "to-slate-900 from-darkMode text-lightMode" : "to-white from-slate-100 text-darkMode"
+          !darkMode ? "to-slate-900 from-darkMode text-lightMode" : "to-slate-300 from-slate-100 text-darkMode"
         } fixed ${!menuMovile ? "-translate-x-full" : "translate-x-0"} z-20`}
       >
         <div className="p-4 flex flex-col justify-center items-center gap-8 text-3xl md:hidden font-normal">

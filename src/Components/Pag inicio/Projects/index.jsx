@@ -50,7 +50,7 @@ export const Projects = ({ darkMode }) => {
       </h2>
       <div className="w-full flex">
         <h3 className="w-4/5 py-2 lg:py-5 text-2xl sm:text-4xl md:text-3xl px-3">
-          Cada proyecto se construyo paso a paso
+          Each project was built step by step
           <span className="text-secondary ml-1 text-3xl">
             <Gi3DStairs className="inline bg-white/10 p-1 rounded-full shadow shadow-black/50 border-2 border-white/10 text-slate-300" />
           </span>{" "}
