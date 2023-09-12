@@ -1,7 +1,6 @@
 import React from "react";
 import { vector2, vector3 } from "../../svgs";
 import { RiSuitcaseFill } from "react-icons/ri";
-import { Link } from "react-router-dom";
 
 export const Resume = ({ darkMode }) => {
   return (

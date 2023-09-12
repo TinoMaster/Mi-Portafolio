@@ -1,14 +1,14 @@
 import React from "react";
 import { Gi3DStairs } from "react-icons/gi";
 import { Project } from "./Project";
-import { /* appLocal_dark, */ appLocal_light } from "../../../images";
+import { appLocal_dark, appDebts, appMercado } from "../../../images";
 
 const properties = [
   {
-    name: "Gestor de ventas",
+    name: "Sales management",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Est adipisci optio fuga veritatis maxime soluta possimus minima eos, eum commodi incidunt quos libero perspiciatis temporibus corrupti recusandae. Sapiente, nemo iusto.",
-    image: appLocal_light,
+      "This was my first completed and fully functional application, which has been in operation for three years for a business. It was a significant challenge because it incorporates many features and represented my first major learning experience.",
+    image: appLocal_dark,
     links: [
       "https://github.com/TinoMaster/apklocal",
       "https://github.com/TinoMaster/api-local",
@@ -19,22 +19,20 @@ const properties = [
     dataBase: "MongoDB",
   },
   {
-    name: "Mercado",
+    name: "Debt management",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Est adipisci optio fuga veritatis maxime soluta possimus minima eos, eum commodi incidunt quos libero perspiciatis temporibus corrupti recusandae. Sapiente, nemo iusto.",
-    image:
-      "https://esquio.es/wp-content/uploads/2022/11/diseno_web_profesional_negocio_online.jpg",
+      "This application arose from the recurring need to manage debts with a friend effectively. It enabled both of us to have control over our debts, further enhancing my existing knowledge. The application effectively tracks debts with proper permissions, allowing each user to make changes according to their circumstances.",
+    image: appDebts,
     links: [],
     tegnologiesF: ["React", "Tailwind CSS"],
     tegnologiesB: ["Nodejs", "Express"],
     dataBase: "MongoDB",
   },
   {
-    name: "Sueño Virtual",
+    name: "Vitual Market",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Est adipisci optio fuga veritatis maxime soluta possimus minima eos, eum commodi incidunt quos libero perspiciatis temporibus corrupti recusandae. Sapiente, nemo iusto.",
-    image:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTBUOzY6Zd0yTLm3k8mNUmdGjn2UajWeQj9MA-cPiSC8pv-d2TIzRu_R0rzDbb81P7Stc&usqp=CAU",
+      "This application was created out of the need to establish a platform where images played a central role in the project. It provided an opportunity to elevate my expertise in handling images across all aspects of website development. Furthermore, it served as a test of my ability to construct a project that, despite my technical knowledge, pushed the boundaries of my aesthetic skills.",
+    image: appMercado,
     links: [],
     tegnologiesF: ["React", "Tailwind CSS"],
     tegnologiesB: ["Nodejs", "Express"],
