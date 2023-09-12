@@ -43,22 +43,43 @@ export const Resume = ({ darkMode }) => {
             </span>
           </p>
           <p className="w-full sm:text-2xl text-justify font-serif pt-10 z-20">
-            "I am a developer with extensive experience in technologies such as
-            the MERN Stack and related ones. I have been involved in various web
-            projects, successfully applying these technologies. My passion for
-            learning and continuous growth in this field constantly drives me to
-            stay updated on the latest trends and best practices. In my
-            portfolio, you will find concrete examples of my work and skills. I
-            consider myself an enthusiast for the mentioned technologies, and if
-            you are seeking an enthusiastic and competent web developer in these
-            areas, do not hesitate to contact me. I am willing to take on new
-            challenges and contribute to the success of your project."
+            "Hello, the world of programming is my true passion. I wake up every
+            day with the constant aspiration to add value to my surroundings. I
+            firmly believe in my ability to accomplish any goal I set for
+            myself. Several years ago, I embarked on this journey independently,
+            and programming has unquestionably become my top priority and
+            greatest love. I am confident that my dedication, commitment, and
+            thirst for growth can contribute significantly wherever I go. My
+            portfolio serves as a testament to the skills I have honed thus far,
+            and I am certain that I will continue to expand my capabilities. If
+            you are seeking someone with my skill set, there's no need to look
+            any further – you've just found the right person!"
           </p>
           <div className="pt-5 flex flex-wrap justify-between md:justify-center gap-3">
-            <h4 className="font-semibold text-lg w-full text-center">Languages:</h4>
-            <p className={`py-1 px-2 text-sm md:text-base shadow-md ${darkMode ?"bg-white":"bg-slate-700"} rounded-md`}>Spanish: Native</p>
-            <p className={`py-1 px-2 text-sm md:text-base shadow-md ${darkMode ?"bg-white":"bg-slate-700"} rounded-md`}>English: B1</p>
-            <p className={`py-1 px-2 text-sm md:text-base shadow-md ${darkMode ?"bg-white":"bg-slate-700"} rounded-md`}>Italian: B1</p>
+            <h4 className="font-semibold text-lg w-full text-center">
+              Languages:
+            </h4>
+            <p
+              className={`py-1 px-2 text-sm md:text-base shadow-md ${
+                darkMode ? "bg-white" : "bg-slate-700"
+              } rounded-md`}
+            >
+              Spanish: Native
+            </p>
+            <p
+              className={`py-1 px-2 text-sm md:text-base shadow-md ${
+                darkMode ? "bg-white" : "bg-slate-700"
+              } rounded-md`}
+            >
+              English: B1
+            </p>
+            <p
+              className={`py-1 px-2 text-sm md:text-base shadow-md ${
+                darkMode ? "bg-white" : "bg-slate-700"
+              } rounded-md`}
+            >
+              Italian: B1
+            </p>
           </div>
           {/* <div className="pb-10 pt-5">
             <Link
