@@ -4,7 +4,7 @@ import { RiSuitcaseFill } from "react-icons/ri";
 
 export const Resume = ({ darkMode }) => {
   return (
-    <div className="w-full text-lg relative max-w-720p m-auto pt-5 rounded-md overflow-hidden font-serif">
+    <div className="w-full text-lg relative max-w-720p m-auto pt-5 rounded-md overflow-hidden">
       <div className="flex w-full justify-end">
         {/* img */}
         <div className="flex w-full h-full absolute">
@@ -36,13 +36,13 @@ export const Resume = ({ darkMode }) => {
           <p className="w-full text-xl md:text-2xl font-semibold text-end mr-5 text-primary py-6 lg:py-10">
             ABOUT ME
           </p>
-          <p className="w-4/5 text-2xl sm:text-5xl md:text-4xl text-end font-serif lg:py-6">
+          <p className="flex items-center gap-1 w-4/5 text-xl sm:text-4xl md:text-2xl">
             Welcome to my web portfolio.{" "}
-            <span className="text-3xl">
-              <RiSuitcaseFill className="inline bg-white/10 p-1 rounded-full shadow lg:-translate-y-1 shadow-black/50 border-2 border-white/10 text-slate-300" />
+            <span className="md:text-3xl">
+              <RiSuitcaseFill className="bg-white/10 inline p-1 rounded-full shadow -translate-y-1 shadow-black/50" />
             </span>
           </p>
-          <p className="w-full sm:text-2xl text-justify font-serif pt-10 z-20">
+          <p className="w-full sm:text-2xl text-justify  pt-10 z-20">
             "Hello, the world of programming is my true passion. I wake up every
             day with the constant aspiration to add value to my surroundings. I
             firmly believe in my ability to accomplish any goal I set for
@@ -55,40 +55,14 @@ export const Resume = ({ darkMode }) => {
             you are seeking someone with my skill set, there's no need to look
             any further – you've just found the right person!"
           </p>
-          <div className="pt-5 flex flex-wrap justify-between md:justify-center gap-3">
-            <h4 className="font-semibold text-lg w-full text-center">
-              Languages:
-            </h4>
-            <p
-              className={`py-1 px-2 text-sm md:text-base shadow-md ${
-                darkMode ? "bg-white" : "bg-slate-700"
-              } rounded-md`}
-            >
-              Spanish: Native
-            </p>
-            <p
-              className={`py-1 px-2 text-sm md:text-base shadow-md ${
-                darkMode ? "bg-white" : "bg-slate-700"
-              } rounded-md`}
-            >
-              English: B1
-            </p>
-            <p
-              className={`py-1 px-2 text-sm md:text-base shadow-md ${
-                darkMode ? "bg-white" : "bg-slate-700"
-              } rounded-md`}
-            >
-              Italian: B1
-            </p>
+          <div className="pt-5 flex flex-col gap-3 py-5">
+            <h4 className="font-semibold text-lg w-full">Languages:</h4>
+            <div className="flex w-full gap-3">
+              <p className="text-sm md:text-base shadow-md p-1 rounded-md bg-white/5">Spanish: Native</p>
+              <p className="text-sm md:text-base shadow-md p-1 rounded-md bg-white/5">English: B1</p>
+              <p className="text-sm md:text-base shadow-md p-1 rounded-md bg-white/5">Italian: B1</p>
+            </div>
           </div>
-          {/* <div className="pb-10 pt-5">
-            <Link
-              to={"/acerca"}
-              className="py-2 px-4 bg-secondary/70 hover:bg-secondary/80 transition-colors rounded-md"
-            >
-              More info ⇢
-            </Link>
-          </div> */}
         </div>
       </div>
     </div>

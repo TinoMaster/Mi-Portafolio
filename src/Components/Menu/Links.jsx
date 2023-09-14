@@ -9,7 +9,7 @@ export const Links = () => {
   };
 
   return (
-    <div className="md:flex font-serif relative hidden pr-2">
+    <div className="md:flex  relative hidden pr-2">
       {linksScroll?.map((link) => (
         <Link
           className={`flex items-baseline font-semibold mr-4 hover:text-primary/60 transition-all`}

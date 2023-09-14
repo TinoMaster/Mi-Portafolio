@@ -20,7 +20,7 @@ const contacts = [
 
 export const Contacts = ({ darkMode }) => {
   return (
-    <div className="flex flex-wrap justify-center w-full max-w-720p m-auto font-serif">
+    <div className="flex flex-wrap justify-center w-full max-w-720p m-auto ">
       <h2 className="w-full text-xl md:text-2xl font-semibold text-center md:text-end mr-5 text-primary py-6 lg:py-10">
         CONTACT
       </h2>

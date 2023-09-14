@@ -8,11 +8,12 @@ function App() {
   const { states } = useContext(AppContext);
   return (
     <main
-      className={
-        !states.darkMode
-          ? "w-screen h-screen overflow-hidden bg-darkMode text-slate-100 "
-          : "w-screen h-screen overflow-hidden bg-lightMode text-slate-700 "
-      }
+      className={`w-screen h-screen overflow-hidden font-roboto
+        ${
+          !states.darkMode
+            ? "bg-darkMode text-slate-100"
+            : "bg-lightMode text-slate-700"
+        }`}
     >
       <BrowserRouter>
         <BaseLayout />

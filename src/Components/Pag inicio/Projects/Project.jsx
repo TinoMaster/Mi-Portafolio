@@ -18,7 +18,7 @@ export const Project = ({ darkMode, properties, index }) => {
     <div
       className={`flex flex-wrap ${
         index % 2 === 0 ? "flex-row" : "flex-row-reverse"
-      } justify-center w-full my-10 mx-3 lg:mx-0 rounded-lg ${
+      } justify-center w-full mx-3 lg:mx-0 rounded-lg ${
         !darkMode ? "bg-white/5" : "bg-white"
       }`}
     >
@@ -77,35 +77,42 @@ export const Project = ({ darkMode, properties, index }) => {
           </h4>
         </div>
         {/* Caja de links */}
-        <div className="w-full flex flex-wrap py-8 justify-center">
-          <button
-            onClick={() => {
-              window.open(links[0], "_blank");
-            }}
-            className="flex items-center mx-2 my-2 text-green-500 hover:text-green-400 transition-colors"
-          >
-            <FaGithub className="mr-1 text-3xl" />{" "}
-            <span className="text-xl">Code</span>
-          </button>
-          <button
-            onClick={() => {
-              window.open(links[1], "_blank");
-            }}
-            className="flex items-center mx-2 my-2 text-violet-500 hover:text-violet-400 transition-colors"
-          >
-            <FaGithub className="mr-1 text-3xl" />{" "}
-            <span className="text-xl">Code API</span>
-          </button>
-          <button
-            onClick={() => {
-              window.open(links[2], "_blank");
-            }}
-            className="flex items-center mx-2 my-2 text-yellow-500 hover:text-yellow-400 transition-colors"
-          >
-            <GiRapidshareArrow className="mr-1 text-3xl" />{" "}
-            <span className="text-xl">Demo</span>
-          </button>
-        </div>
+        {links.length > 0 ? (
+          <div className="w-full flex flex-wrap py-8 justify-center">
+            <button
+              onClick={() => {
+                window.open(links[0], "_blank");
+              }}
+              className="flex items-center mx-2 my-2 text-green-500 hover:text-green-400 transition-colors"
+            >
+              <FaGithub className="mr-1 text-3xl" />{" "}
+              <span className="text-xl">Code</span>
+            </button>
+            <button
+              onClick={() => {
+                window.open(links[1], "_blank");
+              }}
+              className="flex items-center mx-2 my-2 text-violet-500 hover:text-violet-400 transition-colors"
+            >
+              <FaGithub className="mr-1 text-3xl" />{" "}
+              <span className="text-xl">Code API</span>
+            </button>
+            <button
+              onClick={() => {
+                window.open(links[2], "_blank");
+              }}
+              className="flex items-center mx-2 my-2 text-yellow-500 hover:text-yellow-400 transition-colors"
+            >
+              <GiRapidshareArrow className="mr-1 text-3xl" />{" "}
+              <span className="text-xl">Demo</span>
+            </button>
+          </div>
+        ) : (
+          <div className="w-full flex gap-2 flex-wrap py-8 justify-center">
+            <p className="">Links:</p>
+            <p className="">Soon...</p>
+          </div>
+        )}
       </div>
     </div>
   );

@@ -23,7 +23,11 @@ const properties = [
     description:
       "This application arose from the recurring need to manage debts with a friend effectively. It enabled both of us to have control over our debts, further enhancing my existing knowledge. The application effectively tracks debts with proper permissions, allowing each user to make changes according to their circumstances.",
     image: appDebts,
-    links: [],
+    links: [
+      "https://github.com/TinoMaster/my_debts",
+      "https://github.com/TinoMaster/debts_api",
+      "https://debts.tinomaster.website/",
+    ],
     tegnologiesF: ["React", "Tailwind CSS"],
     tegnologiesB: ["Nodejs", "Express"],
     dataBase: "MongoDB",
@@ -42,15 +46,15 @@ const properties = [
 
 export const Projects = ({ darkMode }) => {
   return (
-    <div className="flex flex-wrap justify-center w-full max-w-720p m-auto font-serif">
-      <h2 className="w-full text-xl md:text-2xl font-semibold pl-3 text-primary py-6 lg:py-10">
+    <div className="flex flex-wrap gap-5 justify-center w-full max-w-720p m-auto ">
+      <h2 className="w-full text-xl md:text-2xl font-semibold pl-3 text-primary lg:py-10">
         PROJECTS
       </h2>
       <div className="w-full flex">
-        <h3 className="w-4/5 py-2 lg:py-5 text-2xl sm:text-4xl md:text-3xl px-3">
-          Each project was built step by step
-          <span className="text-secondary ml-1 text-3xl">
-            <Gi3DStairs className="inline bg-white/10 p-1 rounded-full shadow shadow-black/50 border-2 border-white/10 text-slate-300" />
+        <h3 className="flex items-center gap-2 w-4/5 lg:py-5 text-xl sm:text-4xl md:text-2xl px-3">
+          Built step by step
+          <span className="ml-1 text-3xl">
+            <Gi3DStairs className="inline bg-white/10 p-2 rounded-full shadow shadow-black/50" />
           </span>{" "}
         </h3>
       </div>

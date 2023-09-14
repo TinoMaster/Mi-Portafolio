@@ -9,6 +9,9 @@ module.exports = {
         darkMode: "#171717",
         lightMode: "#F1F5F9",
       },
+      fontFamily: {
+        roboto: ["Roboto"],
+      },
       maxHeight: {
         "1080p": "1080px",
       },
@@ -21,4 +24,3 @@ module.exports = {
   },
   plugins: [],
 };
- 

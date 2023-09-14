@@ -39,7 +39,7 @@ export const TypedReactHooksDemo = () => {
   return (
     <>
       <span
-        className="text-primary ml-1 font-serif font-semibold lg:text-2xl"
+        className="text-primary ml-1  font-semibold lg:text-2xl"
         ref={el}
       />
 
