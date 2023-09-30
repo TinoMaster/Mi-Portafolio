@@ -12,7 +12,7 @@ export const Links = () => {
     <div className="md:flex  relative hidden pr-2">
       {linksScroll?.map((link) => (
         <Link
-          className={`flex items-baseline font-semibold mr-4 hover:text-primary/60 transition-all`}
+          className={`flex items-baseline mr-4 hover:text-primary/60 transition-all`}
           key={link.name}
           href="seccion1"
           onClick={() => {

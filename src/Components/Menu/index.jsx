@@ -15,8 +15,8 @@ export const Menu = ({ switchMenu }) => {
           : "bg-gradient-to-b from-darkMode to-darkMode/80"
       }`}
     >
-      {/*  */}
-      <div className="w-12 h-12 lg:w-14 lg:h-14 relative bg-white shadow-md shadow-primary/30 rounded-full ml-5">
+      {/*  Logo*/}
+      <div className="w-12 h-12 relative bg-white shadow-md shadow-primary/30 rounded-full ml-5 lg:ml-10">
         <img
           src={mi_logo}
           alt="mi logo"

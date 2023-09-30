@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
-import { Banner } from "./Banner";
-import { Resume } from "./Resume";
+import { Hero } from "./Hero";
+import { AboutMe } from "./About me";
 
 import AppContext from "../../Contexts/appContext";
 import { Projects } from "./Projects";
@@ -14,7 +14,7 @@ export const PagInicio = () => {
     <div className="w-full flex flex-col relative">
       {/* layout pag inicio */}
       <div id="1" className="flex flex-col pt-10 w-full m-auto h-[100vh]">
-        <Banner states={states} />
+        <Hero states={states} />
       </div>
 
       <div
@@ -23,7 +23,7 @@ export const PagInicio = () => {
           !darkMode ? "bg-zinc-900" : "bg-white/80"
         } `}
       >
-        <Resume darkMode={darkMode} />
+        <AboutMe darkMode={darkMode} />
       </div>
 
       <div id="3" className="lg:py-20 py-10">

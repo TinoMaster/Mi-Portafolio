@@ -46,7 +46,7 @@ const properties = [
 
 export const Projects = ({ darkMode }) => {
   return (
-    <div className="flex flex-wrap gap-5 justify-center w-full max-w-720p m-auto ">
+    <div className="flex flex-wrap gap-5 justify-center w-full m-auto ">
       <h2 className="w-full text-xl md:text-2xl font-semibold pl-3 text-primary lg:py-10">
         PROJECTS
       </h2>
