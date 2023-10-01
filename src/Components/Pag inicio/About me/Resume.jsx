@@ -1,9 +1,17 @@
+import { motion } from "framer-motion";
 import React from "react";
 import { RiSuitcaseFill } from "react-icons/ri";
+import { resumeAboutMe } from "../../../animation/framers";
 
 export const Resume = () => {
   return (
-    <div className="flex flex-col gap-4 lg:w-1/2 m-auto h-full">
+    <motion.div
+      variants={resumeAboutMe}
+      initial="initial"
+      whileInView="animate"
+      transition={{ duration: 1 }}
+      className="flex flex-col gap-4 lg:w-1/2 m-auto h-full"
+    >
       <p className="w-full flex lg:text-lg gap-1 justify-center items-center lg:justify-start italic font-semibold">
         Welcome To My Portfolio.
         <span className="md:text-2xl hidden lg:flex">
@@ -38,6 +46,6 @@ export const Resume = () => {
           </p>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };

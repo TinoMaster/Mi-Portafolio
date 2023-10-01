@@ -1,11 +1,12 @@
-import React, { useState } from "react";
 import { TypedReactHooksDemo } from "../../exampleTypedJs";
 import { FaGithub, FaLinkedin, FaTwitterSquare } from "react-icons/fa";
 import { HiOutlineDocumentDownload } from "react-icons/hi";
 import { GiHand } from "react-icons/gi";
+import { useCurriculum } from "../../../Hooks/useCurriculum";
 
 export const Presentation = () => {
-  const [viewCV, setViewCV] = useState(false);
+  const { downloadEngCurr, downloadEspCurr, cvType } = useCurriculum();
+
   return (
     <div className="flex flex-col w-full text-2xl md:w-1/2 md:text-2xl xl:text-2xl mt-8 md:mt-0 justify-center items-center md:items-start">
       <span className="flex items-center p-1">
@@ -22,21 +23,11 @@ export const Presentation = () => {
         </span>
       </span>
       <button
-        onClick={async () => {
-          setViewCV(true);
-          await setTimeout(() => {
-            setViewCV(false);
-          }, 3000);
-        }}
-        className="flex justify-center items-center relative  bg-secondary/70 font-medium border-2 border-secondary/50 px-2 py-1 shadow-lg shadow-secondary/10 lg:w-1/3 my-2 text-lg lg:text-lg z-10 hover:bg-secondary/80 hover:shadow-md hover:shadow-secondary/30 rounded-md hover:cursor-pointer transition-all"
+        onClick={downloadEngCurr}
+        className="flex justify-center items-center relative bg-secondary/70 font-medium border-2 border-secondary/50 px-2 py-1 shadow-lg shadow-secondary/10 lg:w-1/3 my-2 text-lg lg:text-lg z-10 hover:bg-secondary/80 hover:shadow-md hover:shadow-secondary/30 rounded-md hover:cursor-pointer transition-all"
       >
         <HiOutlineDocumentDownload className="text-3xl rounded-full p-1" />
-        Download CV{" "}
-        <span
-          className={`absolute text-sm md:text-base transition-all ${viewCV ?"translate-x-36 md:translate-x-48":"translate-x-0 opacity-0"}`}
-        >
-          In construction
-        </span>
+        Download CV
       </button>
       <div className="flex px-6">
         <p className="m-2">

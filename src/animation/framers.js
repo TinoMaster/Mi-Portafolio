@@ -22,3 +22,14 @@ export const imageaboutme2 = {
     x: 0,
   },
 };
+
+export const resumeAboutMe = {
+  initial: {
+    opacity: 0,
+    y: "100px",
+  },
+  animate: {
+    opacity: 1,
+    y: 0,
+  },
+};
