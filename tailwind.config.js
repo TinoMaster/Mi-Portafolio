@@ -6,7 +6,7 @@ module.exports = {
       colors: {
         primary: "#544AF4",
         secondary: "#63f861ff",
-        darkMode: "#171717",
+        darkMode: "#242528",
         lightMode: "#F1F5F9",
       },
       fontFamily: {
@@ -17,7 +17,7 @@ module.exports = {
       },
       maxWidth: {
         "1080p": "1920px",
-        "720p": "1200px",
+        "720p": "1100px",
         "Web-view": "1800px",
       },
     },

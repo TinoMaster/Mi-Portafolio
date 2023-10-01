@@ -21,14 +21,14 @@ const contacts = [
 export const Contacts = ({ darkMode }) => {
   return (
     <div className="flex flex-wrap justify-center w-full m-auto ">
-      <h2 className="w-full text-xl md:text-2xl font-semibold text-center md:text-end mr-5 text-primary py-6 lg:py-10">
+      <h2 className="w-full font-semibold text-center lg:text-end lg:py-10 lg:text-xl text-primary">
         CONTACT
       </h2>
       <div className="w-full flex flex-col items-center">
         {/* title */}
-        <h3 className="w-full py-2 lg:py-5 text-2xl sm:text-4xl md:text-3xl flex items-center justify-center md:justify-start">
+        <h3 className="w-full py-2 lg:py-5 text-2xl font-semibold lg:text-xl flex items-center text-center justify-center lg:justify-start italic">
           Don't hesitate, Contact me{" "}
-          <FaHandPointDown className="text-yellow-400 ml-1" />
+          <FaHandPointDown className="text-yellow-400 ml-1 hidden lg:flex" />
         </h3>
         {/* Contacts links */}
         <div className="w-full flex flex-wrap">
@@ -36,20 +36,20 @@ export const Contacts = ({ darkMode }) => {
           {contacts?.map((el) => (
             <div
               key={el.name}
-              className="flex flex-wrap justify-center md:justify-start gap-3 items-center py-5 w-full md:w-[300px] rounded-md"
+              className="flex flex-wrap justify-center lg:justify-start gap-3 items-center py-5 w-full lg:w-[300px] rounded-md"
             >
               {/* Icon */}
-              <div className="w-full flex justify-center md:w-auto">
+              <div className="w-full flex justify-center lg:w-auto">
                 <div
-                  className={`p-4 ${
+                  className={`p-3 ${
                     darkMode ? "bg-white " : "bg-white/10"
-                  } rounded-full text-4xl shadow-xl shadow-primary/10 border-2 border-primary/20`}
+                  } rounded-full text-3xl shadow-xl shadow-primary/10 border-2 border-primary/20`}
                 >
                   {el.icon}
                 </div>
               </div>
               {/* indication */}
-              <div className="flex flex-col items-center md:items-start">
+              <div className="flex flex-col items-center lg:items-start">
                 <span className="font-semibold text-lg">{el.name}</span>
                 <a
                   href={el.link}

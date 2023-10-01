@@ -18,11 +18,11 @@ export const Project = ({ darkMode, properties, index }) => {
     <div
       className={`flex flex-wrap ${
         index % 2 === 0 ? "flex-row" : "flex-row-reverse"
-      } justify-center w-full mx-3 lg:mx-0 rounded-lg ${
+      } justify-center w-full rounded-lg ${
         !darkMode ? "bg-white/5" : "bg-white"
       }`}
     >
-      <div className="flex items-center justify-center w-full h-[300px] lg:h-full lg:w-1/2 px-4 py-7">
+      <div className="flex items-center justify-center w-full h-[300px] lg:h-full md:w-1/2 px-4 py-7">
         <div
           className={`w-full h-full ${
             !darkMode ? "bg-white/5" : "bg-slate-200"
@@ -33,7 +33,7 @@ export const Project = ({ darkMode, properties, index }) => {
         </div>
       </div>
       {/* Caja de descripcion */}
-      <div className="flex flex-col w-full lg:w-1/2 p-8 pb-0">
+      <div className="flex flex-col w-full md:w-1/2 p-3 pb-0">
         <h3 className="w-full text-center text-lg font-semibold pb-6 lg:pb-10">
           {name}
         </h3>

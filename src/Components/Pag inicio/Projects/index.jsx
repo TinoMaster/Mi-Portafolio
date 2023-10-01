@@ -14,7 +14,7 @@ const properties = [
       "https://github.com/TinoMaster/api-local",
       "https://xn--sueovirtual-3db.com/",
     ],
-    tegnologiesF: ["React", "Tailwind CSS"],
+    tegnologiesF: ["React", "Tailwind"],
     tegnologiesB: ["Nodejs", "Express"],
     dataBase: "MongoDB",
   },
@@ -28,7 +28,7 @@ const properties = [
       "https://github.com/TinoMaster/debts_api",
       "https://debts.tinomaster.website/",
     ],
-    tegnologiesF: ["React", "Tailwind CSS"],
+    tegnologiesF: ["React", "Tailwind"],
     tegnologiesB: ["Nodejs", "Express"],
     dataBase: "MongoDB",
   },
@@ -38,23 +38,23 @@ const properties = [
       "This application was created out of the need to establish a platform where images played a central role in the project. It provided an opportunity to elevate my expertise in handling images across all aspects of website development. Furthermore, it served as a test of my ability to construct a project that, despite my technical knowledge, pushed the boundaries of my aesthetic skills.",
     image: appMercado,
     links: [],
-    tegnologiesF: ["React", "Tailwind CSS"],
-    tegnologiesB: ["Nodejs", "Express"],
+    tegnologiesF: ["Next13", "Tailwind"],
+    tegnologiesB: ["Next13"],
     dataBase: "MongoDB",
   },
 ];
 
 export const Projects = ({ darkMode }) => {
   return (
-    <div className="flex flex-wrap gap-5 justify-center w-full m-auto ">
-      <h2 className="w-full text-xl md:text-2xl font-semibold pl-3 text-primary lg:py-10">
+    <div className="flex flex-wrap gap-5 justify-center w-full m-auto">
+      <h2 className="w-full text-center lg:text-start lg:text-xl font-semibold text-primary">
         PROJECTS
       </h2>
       <div className="w-full flex">
-        <h3 className="flex items-center gap-2 w-4/5 lg:py-5 text-xl sm:text-4xl md:text-2xl px-3">
+        <h3 className="w-full flex lg:text-lg gap-1 justify-center items-center lg:justify-start italic font-semibold">
           Built step by step
-          <span className="ml-1 text-3xl">
-            <Gi3DStairs className="inline bg-white/10 p-2 rounded-full shadow shadow-black/50" />
+          <span className="md:text-2xl hidden lg:flex">
+            <Gi3DStairs className="inline bg-white/10 p-1 rounded-full shadow shadow-black/50" />
           </span>{" "}
         </h3>
       </div>

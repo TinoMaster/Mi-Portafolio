@@ -3,7 +3,7 @@ import { ButtonModeDark } from "./ButtonModeDark";
 import { Links } from "./Links";
 import { AiOutlineMenu } from "react-icons/ai";
 import AppContext from "../../Contexts/appContext";
-import { mi_logo } from "../../images";
+import { Logo } from "./Logo";
 
 export const Menu = ({ switchMenu }) => {
   const { states } = useContext(AppContext);
@@ -16,13 +16,7 @@ export const Menu = ({ switchMenu }) => {
       }`}
     >
       {/*  Logo*/}
-      <div className="w-12 h-12 relative bg-white shadow-md shadow-primary/30 rounded-full ml-5 lg:ml-10">
-        <img
-          src={mi_logo}
-          alt="mi logo"
-          className="w-full h-full object-cover"
-        />
-      </div>
+      <Logo />
       <div className="flex">
         <ButtonModeDark
           darkMode={states.darkMode}

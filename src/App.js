@@ -11,7 +11,7 @@ function App() {
       className={`w-screen h-screen overflow-hidden font-roboto
         ${
           !states.darkMode
-            ? "bg-darkMode text-slate-100"
+            ? "bg-darkMode text-slate-300"
             : "bg-lightMode text-slate-700"
         }`}
     >
