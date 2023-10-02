@@ -1,6 +1,6 @@
 import React from "react";
 import { Resume } from "./Resume";
-import { BoxImage } from "./BoxImage";
+import { BoxCards } from "./BoxCards";
 
 export const AboutMe = ({ darkMode }) => {
   return (
@@ -9,7 +9,7 @@ export const AboutMe = ({ darkMode }) => {
         ABOUT ME
       </p>
       {/* img */}
-      <BoxImage />
+      <BoxCards />
       {/* Escrito */}
       <Resume />
     </div>

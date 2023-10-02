@@ -20,6 +20,9 @@ module.exports = {
         "720p": "1100px",
         "Web-view": "1800px",
       },
+      fontSize: {
+        s: "9px",
+      },
     },
   },
   plugins: [],

@@ -5,7 +5,7 @@ import { GiHand } from "react-icons/gi";
 import { useCurriculum } from "../../../Hooks/useCurriculum";
 
 export const Presentation = () => {
-  const { downloadEngCurr, downloadEspCurr, cvType } = useCurriculum();
+  const { downloadEngCurr } = useCurriculum();
 
   return (
     <div className="flex flex-col w-full text-2xl md:w-1/2 md:text-2xl xl:text-2xl mt-8 md:mt-0 justify-center items-center md:items-start">

@@ -19,18 +19,16 @@ export const Resume = () => {
         </span>
       </p>
 
-      <p className="w-full text-sm lg:text-base text-justify z-20">
-        "Hello, the world of programming is my true passion. I wake up every day
-        with the constant aspiration to add value to my surroundings. I firmly
-        believe in my ability to accomplish any goal I set for myself. Several
-        years ago, I embarked on this journey independently, and programming has
-        unquestionably become my top priority and greatest love. I am confident
-        that my dedication, commitment, and thirst for growth can contribute
-        significantly wherever I go. My portfolio serves as a testament to the
-        skills I have honed thus far, and I am certain that I will continue to
-        expand my capabilities. If you are seeking someone with my skill set,
-        there's no need to look any further – you've just found the right
-        person!"
+      <p className="w-full lg:text-base text-justify z-20">
+        "I am a growth-oriented professional with 4 years of experience in the
+        field. My approach is autonomous and passionate in everything I do. I
+        have the ability to take ownership of projects and adapt easily to
+        different environments. My leadership allows me to drive solutions and
+        ideas effectively, while my critical thinking enables me to analyze,
+        define, and prioritize tasks efficiently. I always face challenges with
+        a positive attitude and a smile. I am constantly in search of challenges
+        that push me and a team of people who share the same ambition for
+        continuous improvement."
       </p>
       <div className="flex flex-col gap-3 ">
         <h4 className="font-semibold w-full italic">Languages:</h4>
