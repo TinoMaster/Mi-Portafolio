@@ -27,7 +27,9 @@ export const PagInicio = () => {
       <div
         id="3"
         className={`w-full relative p-4 py-10 lg:py-20 m-auto overflow-hidden ${
-          !darkMode ? "bg-gradient-to-b from-primary/5 via-slate-700/10 to-primary/5" : "bg-gradient-to-b from-primary/10 via-slate-700/20 to-primary/10"
+          !darkMode
+            ? "bg-gradient-to-b from-primary/5 via-slate-700/10 to-primary/5"
+            : "bg-gradient-to-b from-primary/10 via-slate-700/20 to-primary/10"
         }`}
       >
         <Projects darkMode={darkMode} />
@@ -35,7 +37,11 @@ export const PagInicio = () => {
 
       <div
         id="4"
-        className="w-full relative p-4 max-w-720p m-auto overflow-hidden py-10"
+        className={`w-full relative p-4 m-auto overflow-hidden py-10 ${
+          !darkMode
+            ? "bg-gradient-to-b from-primary/5 to-primary/10"
+            : "bg-gradient-to-b from-primary/10 to-primary/60"
+        }`}
       >
         <Contacts darkMode={darkMode} />
       </div>

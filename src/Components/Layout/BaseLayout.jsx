@@ -24,7 +24,9 @@ export const BaseLayout = () => {
         setMenuMovile={setMenuMovile}
         darkMode={states.darkMode}
       />
-      <Footer />
+      <div className="bg-primary/70">
+        <Footer />
+      </div>
     </div>
   );
 };

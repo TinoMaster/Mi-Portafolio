@@ -3,7 +3,7 @@ import { FaGithub, FaLinkedin, FaTwitterSquare } from "react-icons/fa";
 
 export const Footer = () => {
   return (
-    <div className="w-full flex flex-wrap bg-primary/70 p-8 items-center text-lightMode font-semibold text-lg">
+    <div className="w-full flex flex-wrap bg-primary/80 p-8 items-center text-lightMode font-semibold text-lg rounded-t-lg">
       {/* Primera caja */}
       <div className="w-full md:w-1/2 flex py-2 justify-center">
         <h3 className="text-center">Copyright © 2023. All rights are reserved</h3>
