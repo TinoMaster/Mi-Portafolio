@@ -9,7 +9,7 @@ export const Menu = ({ switchMenu }) => {
   const { states } = useContext(AppContext);
   return (
     <nav
-      className={`flex justify-between items-center w-full py-3 fixed z-30 ${
+      className={`flex justify-between items-center w-full py-3 fixed z-40 ${
         states.darkMode
           ? "bg-gradient-to-b from-lightMode to-lightMode/80"
           : "bg-gradient-to-b from-darkMode to-darkMode/80"

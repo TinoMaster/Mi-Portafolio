@@ -13,8 +13,8 @@ export const Card2 = () => {
       className="flex flex-col gap-2 justify-center rounded-md bg-primary items-start hover:cursor-pointer"
     >
       <motion.div
-        initial={{ opacity: 1 }}
-        whileTap={{ opacity: 0 }}
+        /* initial={{ opacity: 1 }}
+        whileTap={{ opacity: 0 }} */
         className="flex flex-col justify-center select-none w-[120px] border border-secondary h-[170px] lg:w-[180px] lg:h-[250px] p-3 shadow-lg shadow-black/40 rounded-md bg-white/5"
       >
         <div className="flex flex-col gap-1">
@@ -24,12 +24,12 @@ export const Card2 = () => {
           </h3>
         </div>
 
-        <p className="text-xs text-justify text-s lg:text-sm text-white/80">
-          Lorem ipsum dolor sit amet consec sicing elit. Sit amet consec sicing
-          elit,Sit amet consec sicing elit
+        <p className="text-xs text-s lg:text-sm text-white/80">
+          In frontend development, I unleash creativity, crafting engaging
+          interfaces and user experiences.
         </p>
         <button className="w-full text-start text-xs text-white font-semibold lg:text-lg lg:py-2">
-          Touch me →
+          Creativity
         </button>
       </motion.div>
     </motion.div>
