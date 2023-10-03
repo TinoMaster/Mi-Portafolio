@@ -19,7 +19,7 @@ export const Resume = () => {
         </span>
       </p>
 
-      <p className="w-full lg:text-base text-justify z-20">
+      <p className="w-full lg:text-base text-justify">
         "I am a growth-oriented professional with 4 years of experience in the
         field. My approach is autonomous and passionate in everything I do. I
         have the ability to take ownership of projects and adapt easily to

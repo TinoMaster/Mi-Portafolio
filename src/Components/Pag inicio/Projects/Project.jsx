@@ -16,10 +16,10 @@ export const Project = ({ darkMode, properties, index }) => {
   } = properties;
   return (
     <div
-      className={`flex flex-wrap ${
+      className={`flex flex-wrap shadow-md ${
         index % 2 === 0 ? "flex-row" : "flex-row-reverse"
       } justify-center w-full rounded-lg ${
-        !darkMode ? "bg-white/5" : "bg-white"
+        !darkMode ? "bg-white/5" : "bg-white/70"
       }`}
     >
       <div className="flex items-center justify-center w-full h-[300px] lg:h-full md:w-1/2 px-4 py-7">
@@ -34,15 +34,16 @@ export const Project = ({ darkMode, properties, index }) => {
       </div>
       {/* Caja de descripcion */}
       <div className="flex flex-col w-full md:w-1/2 p-3 pb-0">
-        <h3 className="w-full text-center text-lg font-semibold pb-6 lg:pb-10">
+        <h3 className="w-full text-center text-l font-semibold pb-6 lg:pb-10">
           {name}
         </h3>
-        <p className="w-full  lg:text-base text-justify border-b-2 pb-2">
+        <p className="w-full text-justify text-sm border-b-2 pb-2">
           {description}
         </p>
         {/* Seccion tegnologias que use */}
         <h3 className="pt-2 text-primary font-semibold">Tegnologies:</h3>
-        <div className="flex pt-3 items-baseline w-full">
+        {/* Frontend */}
+        <div className="flex pt-3 items-baseline w-full text-sm">
           <p className="flex items-center">
             <CgScreen className="mr-1" /> Frontend:
           </p>
@@ -55,7 +56,8 @@ export const Project = ({ darkMode, properties, index }) => {
             </h4>
           ))}
         </div>
-        <div className="flex pt-3 items-baseline w-full">
+        {/* Backend */}
+        <div className="flex pt-3 items-baseline w-full text-sm">
           <p className="flex items-center">
             <GoServer className="mr-1" /> Backend:
           </p>
@@ -68,7 +70,8 @@ export const Project = ({ darkMode, properties, index }) => {
             </h4>
           ))}
         </div>
-        <div className="flex pt-3 items-baseline w-full">
+        {/* Databases */}
+        <div className="flex pt-3 items-baseline w-full text-sm">
           <p className="flex items-center">
             <GoDatabase className="mr-1" /> DataBase:
           </p>
@@ -85,8 +88,8 @@ export const Project = ({ darkMode, properties, index }) => {
               }}
               className="flex items-center mx-2 my-2 text-green-500 hover:text-green-400 transition-colors"
             >
-              <FaGithub className="mr-1 text-3xl" />{" "}
-              <span className="text-xl">Code</span>
+              <FaGithub className="mr-1 text-2xl" />{" "}
+              <span className="">Code</span>
             </button>
             <button
               onClick={() => {
@@ -94,8 +97,8 @@ export const Project = ({ darkMode, properties, index }) => {
               }}
               className="flex items-center mx-2 my-2 text-violet-500 hover:text-violet-400 transition-colors"
             >
-              <FaGithub className="mr-1 text-3xl" />{" "}
-              <span className="text-xl">Code API</span>
+              <FaGithub className="mr-1 text-2xl" />{" "}
+              <span className="">Code API</span>
             </button>
             <button
               onClick={() => {
@@ -103,8 +106,8 @@ export const Project = ({ darkMode, properties, index }) => {
               }}
               className="flex items-center mx-2 my-2 text-yellow-500 hover:text-yellow-400 transition-colors"
             >
-              <GiRapidshareArrow className="mr-1 text-3xl" />{" "}
-              <span className="text-xl">Demo</span>
+              <GiRapidshareArrow className="mr-1 text-2xl" />{" "}
+              <span className="">Demo</span>
             </button>
           </div>
         ) : (
