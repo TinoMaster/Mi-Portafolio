@@ -16,10 +16,10 @@ export const Project = ({ darkMode, properties, index }) => {
   } = properties;
   return (
     <div
-      className={`flex flex-wrap shadow-md ${
+      className={`flex flex-wrap ${
         index % 2 === 0 ? "flex-row" : "flex-row-reverse"
       } justify-center w-full rounded-lg ${
-        !darkMode ? "bg-white/5" : "bg-white/70"
+        !darkMode ? "" : ""
       }`}
     >
       <div className="flex items-center justify-center w-full h-[300px] lg:h-full md:w-1/2 px-4 py-7">
