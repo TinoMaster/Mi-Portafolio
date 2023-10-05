@@ -8,11 +8,11 @@ function App() {
   const { states } = useContext(AppContext);
   return (
     <main
-      className={`w-screen h-screen overflow-hidden font-roboto
+      className={`w-screen h-screen overflow-hidden font-roboto font-semibold
         ${
           !states.darkMode
             ? "bg-darkMode text-slate-300"
-            : "bg-lightMode text-slate-700"
+            : "bg-lightMode text-slate-600"
         }`}
     >
       <BrowserRouter>
