@@ -8,7 +8,7 @@ function App() {
   const { states } = useContext(AppContext);
   return (
     <main
-      className={`w-screen h-screen overflow-hidden font-roboto font-semibold
+      className={`w-screen h-screen overflow-hidden font-siliguri font-bold
         ${
           !states.darkMode
             ? "bg-darkMode text-slate-300"

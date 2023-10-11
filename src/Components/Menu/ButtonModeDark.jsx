@@ -2,11 +2,11 @@ import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 
-export const ButtonModeDark = ({ darkMode, setDarkMode }) => (
+export const ButtonModeDark = ({ darkMode, changeDarkMode }) => (
   <div className="flex mx-4">
     <div className="Icono"></div>
     <div
-      onClick={() => setDarkMode(!darkMode)}
+      onClick={changeDarkMode}
       className="flex justify-center items-center hover:cursor-pointer"
     >
       {!darkMode ? (

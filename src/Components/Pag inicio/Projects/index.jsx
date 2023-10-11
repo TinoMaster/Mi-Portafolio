@@ -1,7 +1,8 @@
 import React from "react";
 import { Gi3DStairs } from "react-icons/gi";
-import { Project } from "./Project";
+
 import { appLocal_dark, appDebts, appMercado } from "../../../images";
+import { Project } from "./Item Project";
 
 const properties = [
   {
@@ -38,8 +39,8 @@ const properties = [
       "This application was created out of the need to establish a platform where images played a central role in the project. It provided an opportunity to elevate my expertise in handling images across all aspects of website development. Furthermore, it served as a test of my ability to construct a project that, despite my technical knowledge, pushed the boundaries of my aesthetic skills.",
     image: appMercado,
     links: [],
-    tegnologiesF: ["Next13", "Tailwind"],
-    tegnologiesB: ["Next13"],
+    tegnologiesF: ["Next13", "Typescript", "Tailwind"],
+    tegnologiesB: ["Nestjs", "Typescript"],
     dataBase: "MongoDB",
   },
 ];
@@ -51,7 +52,7 @@ export const Projects = ({ darkMode }) => {
         PROJECTS
       </h2>
       <div className="w-full flex">
-        <h3 className="w-full flex lg:text-lg gap-1 justify-center items-center lg:justify-start italic font-semibold">
+        <h3 className="w-full flex lg:text-lg gap-1 justify-center items-center lg:justify-start font-semibold">
           Built step by step
           <span className="md:text-2xl hidden lg:flex">
             <Gi3DStairs className="inline bg-white/10 p-1 rounded-full shadow shadow-black/50" />

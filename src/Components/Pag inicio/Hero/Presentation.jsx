@@ -15,7 +15,7 @@ export const Presentation = () => {
       <h2 className=" text-4xl md:text-3xl xl:text-4xl font-semibold text-primary">
         I'm Oscar
       </h2>
-      <span className="block p-1">Web Designer & Developer.</span>
+      <span className="block p-1">Junior Web Developer.</span>
       <span className="p-1 mr-28 md:m-0">
         Technologies{" "}
         <span className="absolute ml-1">
@@ -24,7 +24,7 @@ export const Presentation = () => {
       </span>
       <button
         onClick={downloadEngCurr}
-        className="flex justify-center items-center relative bg-secondary/70 font-medium border-2 border-secondary/50 px-2 py-1 shadow-lg shadow-secondary/10 lg:w-1/3 my-2 text-lg lg:text-lg z-10 hover:bg-secondary/80 hover:shadow-md hover:shadow-secondary/30 rounded-md hover:cursor-pointer transition-all"
+        className="flex justify-center items-center relative bg-secondary/70 font-medium border-2 border-secondary/50 px-2 py-1 shadow-lg shadow-secondary/10 lg:w-1/3 my-2 text-lg z-10 hover:bg-secondary/80 hover:shadow-md hover:shadow-secondary/30 rounded-md hover:cursor-pointer transition-all"
       >
         <HiOutlineDocumentDownload className="text-3xl rounded-full p-1" />
         Download CV

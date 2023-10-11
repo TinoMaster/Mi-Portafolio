@@ -10,7 +10,9 @@ module.exports = {
         lightMode: "#F1F5F9",
       },
       fontFamily: {
-        roboto: ["Roboto"],
+        lora: ["Lora", "serif"],
+        roboto: ["Roboto", "sans"],
+        siliguri: ["Hind-Siliguri", "sans"],
       },
       maxHeight: {
         "1080p": "1080px",

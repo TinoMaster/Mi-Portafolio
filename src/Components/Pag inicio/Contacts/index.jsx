@@ -26,7 +26,7 @@ export const Contacts = ({ darkMode }) => {
       </h2>
       <div className="w-full flex flex-col items-center">
         {/* title */}
-        <h3 className="w-full py-2 lg:py-5 text-2xl font-semibold lg:text-xl flex items-center text-center justify-center lg:justify-start italic">
+        <h3 className="w-full py-2 lg:py-5 text-2xl font-semibold lg:text-xl flex items-center text-center justify-center lg:justify-start">
           Don't hesitate, Contact me{" "}
           <FaHandPointDown className="text-yellow-400 ml-1 hidden lg:flex" />
         </h3>

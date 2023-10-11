@@ -6,7 +6,7 @@ import AppContext from "../../Contexts/appContext";
 import { Logo } from "./Logo";
 
 export const Menu = ({ switchMenu }) => {
-  const { states } = useContext(AppContext);
+  const { states, functions } = useContext(AppContext);
   return (
     <nav
       className={`flex justify-between items-center w-full py-3 fixed z-40 ${
@@ -20,7 +20,7 @@ export const Menu = ({ switchMenu }) => {
       <div className="flex">
         <ButtonModeDark
           darkMode={states.darkMode}
-          setDarkMode={states.setDarkMode}
+          changeDarkMode={functions.changeDarkMode}
         />
         <Links darkMode={states.darkMode} />
         <div

@@ -33,3 +33,15 @@ export const resumeAboutMe = {
     y: 0,
   },
 };
+
+export const resumeAboutProject = {
+  initial: {
+    opacity: 0,
+    y: "100px",
+  },
+  animate: {
+    opacity: 1,
+    y: 0,
+  },
+};
+
