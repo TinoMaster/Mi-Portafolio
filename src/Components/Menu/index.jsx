@@ -15,7 +15,10 @@ export const Menu = ({ switchMenu }) => {
           : "from-darkMode to-darkMode/80"
       }`}
     >
-      <Logo />
+      <div className="flex items-center gap-1">
+        <Logo />
+        <h1 className="text-white text-lg">TinoMaster</h1>
+      </div>
       <div className="flex">
         <ButtonModeDark
           darkMode={states.darkMode}

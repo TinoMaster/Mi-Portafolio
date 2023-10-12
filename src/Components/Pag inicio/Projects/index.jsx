@@ -1,7 +1,6 @@
 import React from "react";
 import { Gi3DStairs } from "react-icons/gi";
-
-import { appLocal_dark, appDebts, appMercado } from "../../../images";
+import { appLocal_dark, appDebts, appMercado } from "../../../utils/images";
 import { Project } from "./Item Project";
 
 const properties = [

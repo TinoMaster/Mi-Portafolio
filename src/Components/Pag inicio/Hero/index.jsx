@@ -1,7 +1,7 @@
 import React from "react";
 import { Presentation } from "./Presentation";
 import { Imagen } from "./imagen";
-import { mi_fondo1 } from "../../../images";
+import { mi_fondo1 } from "../../../utils/images";
 import { BoxTechs } from "./BoxTechs.jsx";
 
 export const Hero = ({ states }) => {
