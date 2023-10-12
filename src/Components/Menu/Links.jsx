@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { linksScroll } from "../../utils/linksMenu";
+import { linksScroll } from "../../data/linksMenu";
 
 export const Links = () => {
   const scrollToSection = (sectionId) => {

@@ -7,7 +7,6 @@ import { MenuMovil } from "../Menu/MenuMovil";
 export const Container = ({ menuMovile, setMenuMovile, darkMode }) => {
   return (
     <section className="w-full relative">
-      {/* Menu Desplazable */}
       <MenuMovil
         darkMode={darkMode}
         menuMovile={menuMovile}
@@ -15,7 +14,6 @@ export const Container = ({ menuMovile, setMenuMovile, darkMode }) => {
       />
       <Routes>
         <Route path="/" element={<PagInicio />} />
-        {/* <Route path="/blog" element={<PagBlog />} /> */}
         <Route path="/*" element={<Error404 />} />
       </Routes>
     </section>

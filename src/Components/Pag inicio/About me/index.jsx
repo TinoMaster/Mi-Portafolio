@@ -8,9 +8,7 @@ export const AboutMe = ({ darkMode }) => {
       <p className="w-full font-semibold text-center lg:text-end lg:py-10 lg:text-xl text-primary">
         ABOUT ME
       </p>
-      {/* img */}
       <BoxCards />
-      {/* Escrito */}
       <Resume />
     </div>
   );
